@@ -37,7 +37,11 @@ class MainActivity : AppCompatActivity() {
                     Log.i("http-ejemplo", "Edad: ${entrenador!!.edad}")
                     Log.i("http-ejemplo", "Creado: ${entrenador!!.createdAtDate}")
                     Log.i("http-ejemplo", "Actualizado: ${entrenador!!.updateAtDate}")
-                        entrenador.pokemons.forEach{ pokemon:Pokemon}
+                        entrenador.pokemons.forEach{ pokemon:Pokemon ->
+                            Log.i("Http-ejemplo", "Nombre: ${pokemon!!.nombre}")
+                            Log.i("Http-ejemplo", "Tipo: ${pokemon!!.tipo}")
+                            Log.i("Http-ejemplo", "Numero: ${pokemon!!.numero}")
+                        }
 
                     }else{
                         Log.i("http-ejemplo", "entrenador nulo")
