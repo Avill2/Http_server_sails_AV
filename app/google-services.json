@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "827602939740",
+    "firebase_url": "https://a-gr1-moviles-camara-e772e.firebaseio.com",
+    "project_id": "a-gr1-moviles-camara-e772e",
+    "storage_bucket": "a-gr1-moviles-camara-e772e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:827602939740:android:799c130c8dec0c59",
+        "android_client_info": {
+          "package_name": "com.example.usrdel.http_server_sails_av"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "827602939740-g23i2oaqjkpekjcnho8m7nia4j8ro43t.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "827602939740-g23i2oaqjkpekjcnho8m7nia4j8ro43t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCo5jYVluqzJakw95NtlHVBdaVlhcVXwf8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

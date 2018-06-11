@@ -6,6 +6,7 @@ import android.util.Log
 import com.beust.klaxon.Klaxon
 import com.github.kittinunf.fuel.httpGet
 import com.github.kittinunf.result.Result
+import kotlinx.android.synthetic.main.activity_main.*
 import java.util.*
 import kotlin.collections.ArrayList
 
@@ -14,6 +15,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        button_camara
 
         "http://172.29.21.249:1337/Entrenador/2".httpGet().responseString { request, response, result ->
             //do something with response
@@ -54,8 +57,8 @@ class MainActivity : AppCompatActivity() {
     class Entrenador (
             var nombre:String,
             var apellido:String,
-            var edad:String,
-            var medallas:String,
+            var edad:Int,
+            var medallas:Int,
             var createdAt:Long,
             var updateAt:Long,
             var id:Int,
