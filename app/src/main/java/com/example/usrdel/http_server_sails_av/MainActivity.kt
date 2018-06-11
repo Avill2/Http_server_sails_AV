@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        "http://172.29.64.41:1337/Entrenador/2".httpGet().responseString { request, response, result ->
+        "http://172.29.21.249:1337/Entrenador/2".httpGet().responseString { request, response, result ->
             //do something with response
             when (result) {
                 is Result.Failure -> {
@@ -59,7 +59,7 @@ class MainActivity : AppCompatActivity() {
             var createdAt:Long,
             var updateAt:Long,
             var id:Int,
-            var pokemons:ArrayList<Pokemon> = ArrayList()){
+            var pokemons:List<Pokemon> = ArrayList()){
         var createdAtDate = Date(updateAt)
         var updateAtDate = Date(createdAt)
     }
