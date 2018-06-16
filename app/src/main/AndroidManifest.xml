@@ -4,7 +4,20 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+<<<<<<< HEAD
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+=======
+    <uses-permission
+        android:name="android.permission.CAMERA"
+        android:required="true" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.location.gps" />
+>>>>>>> 4ab7c4688a382f059ade223806ca0b20ee151abe
 
     <application
         android:allowBackup="true"
@@ -28,9 +41,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+<<<<<<< HEAD
         <activity
             android:name=".GoogleMapsActivity"
             android:label="@string/title_activity_google_maps"></activity>
+=======
+        <activity android:name=".camaraActivity"></activity>
+>>>>>>> 4ab7c4688a382f059ade223806ca0b20ee151abe
     </application>
 
 </manifest>

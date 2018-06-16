@@ -82,7 +82,7 @@ GoogleMap.OnPolygonClickListener
     val casaCultura: CameraPosition = CameraPosition().Builder().target(casaCulturaLatLng).zoom(zoom).build()
 
     val supermaziLatLng =LatLng(-0.206297, -78.486695)
-    val supermaxi: CameraPosition = CameraPosition().Builder().target(casaCulturaLatLng).zoom(zoom).build()
+    val supermaxi: CameraPosition = CameraPosition().Builder().target(supermaziLatLng.zoom(zoom).build()
 
 
     override fun onCreate(savedInstanceState: Bundle?) {

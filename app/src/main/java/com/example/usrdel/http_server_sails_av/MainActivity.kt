@@ -6,8 +6,12 @@ import android.util.Log
 import com.beust.klaxon.Klaxon
 import com.github.kittinunf.fuel.httpGet
 import com.github.kittinunf.result.Result
+<<<<<<< HEAD
 import com.onesignal.OneSignal
 import com.tapadoo.alerter.Alerter
+=======
+import kotlinx.android.synthetic.main.activity_main.*
+>>>>>>> 4ab7c4688a382f059ade223806ca0b20ee151abe
 import java.util.*
 import kotlin.collections.ArrayList
 
@@ -29,9 +33,15 @@ class MainActivity : AppCompatActivity() {
 
         setContentView(R.layout.activity_main)
 
+<<<<<<< HEAD
 
 
         "http://172.29.64.41:1337/Entrenador/2".httpGet().responseString { request, response, result ->
+=======
+        button_camara
+
+        "http://172.29.21.249:1337/Entrenador/2".httpGet().responseString { request, response, result ->
+>>>>>>> 4ab7c4688a382f059ade223806ca0b20ee151abe
             //do something with response
             when (result) {
                 is Result.Failure -> {
@@ -70,12 +80,12 @@ class MainActivity : AppCompatActivity() {
     class Entrenador (
             var nombre:String,
             var apellido:String,
-            var edad:String,
-            var medallas:String,
+            var edad:Int,
+            var medallas:Int,
             var createdAt:Long,
             var updateAt:Long,
             var id:Int,
-            var pokemons:ArrayList<Pokemon> = ArrayList()){
+            var pokemons:List<Pokemon> = ArrayList()){
         var createdAtDate = Date(updateAt)
         var updateAtDate = Date(createdAt)
     }

@@ -58,7 +58,14 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     implementation 'com.github.kittinunf.fuel:fuel-android:1.13.0'
     implementation 'com.beust:klaxon:3.0.1'
+<<<<<<< HEAD
     implementation 'com.onesignal:OneSignal:[3.9.1, 3.99.99]'
 
     implementation 'com.tapadoo.android:alerter:2.0.6'
+=======
+    implementation 'com.google.firebase:firebase-core:16.0.0'
+    implementation 'com.google.firebase:firebase-ml-vision:16.0.0'
+>>>>>>> 4ab7c4688a382f059ade223806ca0b20ee151abe
 }
+
+apply plugin: 'com.google.gms.google-services'
