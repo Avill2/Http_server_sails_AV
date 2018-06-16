@@ -47,27 +47,27 @@ GoogleMap.OnPolygonClickListener
     private val PATTERN_POLYGON_BETA = Arrays.asList(DOT, GAP, DASH, GAP)
 
     override fun onCameraMoveStarted(p0: Int) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+
     }
 
     override fun onCameraMove() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+
     }
 
     override fun onCameraMoveCanceled() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+
     }
 
     override fun onCameraIdle() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+
     }
 
     override fun onPolylineClick(p0: Polyline?) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+
     }
 
     override fun onPolygonClick(p0: Polygon?) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+
     }
 
     private lateinit var mMap: GoogleMap
