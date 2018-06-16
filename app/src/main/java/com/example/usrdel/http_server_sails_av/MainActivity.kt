@@ -6,6 +6,8 @@ import android.util.Log
 import com.beust.klaxon.Klaxon
 import com.github.kittinunf.fuel.httpGet
 import com.github.kittinunf.result.Result
+import com.onesignal.OneSignal
+import com.tapadoo.alerter.Alerter
 import java.util.*
 import kotlin.collections.ArrayList
 
@@ -13,7 +15,21 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+
+        OneSignal.startInit(this)
+                .inFocusDisplaying(OneSignal.OSInFocusDisplayOption.Notification)
+                .unsubscribeWhenNotificationsAreDisabled(true)
+                .init();
+
+        Alerter.create(this@MainActivity)
+                .setTitle("Alert Title")
+                .setText("Alert text...")
+                .show()
+
         setContentView(R.layout.activity_main)
+
+
 
         "http://172.29.64.41:1337/Entrenador/2".httpGet().responseString { request, response, result ->
             //do something with response
