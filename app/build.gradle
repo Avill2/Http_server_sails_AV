@@ -34,6 +34,8 @@ dependencies {
     implementation 'com.beust:klaxon:3.0.1'
     implementation 'com.google.firebase:firebase-core:16.0.0'
     implementation 'com.google.firebase:firebase-ml-vision:16.0.0'
+    implementation "org.jetbrains.anko:anko:$anko_version"
 }
+
 
 apply plugin: 'com.google.gms.google-services'

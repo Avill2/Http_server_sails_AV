@@ -22,16 +22,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-
         <provider
-            android:name="GenericFileProvider"
+            android:name=".GenericFileProvider"
             android:authorities="com.example.andreavillacis.ejemplo.fileprovider"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/file_paths"></meta-data>
+                android:resource="@xml/file_paths" />
         </provider>
 
         <activity android:name=".MainActivity">
@@ -41,7 +39,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".camaraActivity"></activity>
+        <activity android:name=".camaraActivity" />
+        <activity android:name="com.example.usrdel.http_server_sails_av.ankoActivity"></activity>
     </application>
 
 </manifest>
