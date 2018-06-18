@@ -1,5 +1,6 @@
 package com.example.usrdel.http_server_sails_av
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -16,7 +17,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        button_camara
+        button_camara.setOnClickListener{view ->
+            irActividadCamara()
+        }
 
         "http://172.29.21.249:1337/Entrenador/2".httpGet().responseString { request, response, result ->
             //do something with response
@@ -52,6 +55,11 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         }
+    }
+
+    fun irActividadCamara(){
+        var intent =Intent(this, camaraActivity::class.java)
+        startActivity(intent)
     }
 
     class Entrenador (
