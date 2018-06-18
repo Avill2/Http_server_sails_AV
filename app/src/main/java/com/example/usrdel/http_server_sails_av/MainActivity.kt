@@ -7,7 +7,12 @@ import android.util.Log
 import com.beust.klaxon.Klaxon
 import com.github.kittinunf.fuel.httpGet
 import com.github.kittinunf.result.Result
+<<<<<<< HEAD
+import com.onesignal.OneSignal
+import com.tapadoo.alerter.Alerter
+=======
 import kotlinx.android.synthetic.main.activity_main.*
+>>>>>>> 4ab7c4688a382f059ade223806ca0b20ee151abe
 import java.util.*
 import kotlin.collections.ArrayList
 
@@ -15,13 +20,35 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+
+        OneSignal.startInit(this)
+                .inFocusDisplaying(OneSignal.OSInFocusDisplayOption.Notification)
+                .unsubscribeWhenNotificationsAreDisabled(true)
+                .init();
+
+        Alerter.create(this@MainActivity)
+                .setTitle("Alert Title")
+                .setText("Alert text...")
+                .show()
+
         setContentView(R.layout.activity_main)
 
+<<<<<<< HEAD
         button_camara.setOnClickListener{view ->
             irActividadCamara()
         }
+=======
+<<<<<<< HEAD
+
+
+        "http://172.29.64.41:1337/Entrenador/2".httpGet().responseString { request, response, result ->
+=======
+        button_camara
+>>>>>>> 45ca982e4e991de533395a6f42581c80231a7f0d
 
         "http://172.29.21.249:1337/Entrenador/2".httpGet().responseString { request, response, result ->
+>>>>>>> 4ab7c4688a382f059ade223806ca0b20ee151abe
             //do something with response
             when (result) {
                 is Result.Failure -> {

@@ -4,6 +4,9 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+<<<<<<< HEAD
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+=======
     <uses-permission
         android:name="android.permission.CAMERA"
         android:required="true" />
@@ -14,6 +17,7 @@
 
     <uses-feature android:name="android.hardware.camera" />
     <uses-feature android:name="android.hardware.location.gps" />
+>>>>>>> 4ab7c4688a382f059ade223806ca0b20ee151abe
 
     <application
         android:allowBackup="true"
@@ -22,6 +26,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+<<<<<<< HEAD
         <provider
             android:name=".GenericFileProvider"
             android:authorities="com.example.andreavillacis.ejemplo.fileprovider"
@@ -31,6 +36,15 @@
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/file_paths" />
         </provider>
+=======
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <!--              The API key for Google Maps-based APIs. -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+>>>>>>> 45ca982e4e991de533395a6f42581c80231a7f0d
 
         <activity android:name=".MainActivity">
             <intent-filter>
@@ -39,8 +53,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+<<<<<<< HEAD
         <activity android:name=".camaraActivity" />
         <activity android:name="com.example.usrdel.http_server_sails_av.ankoActivity"></activity>
+=======
+<<<<<<< HEAD
+        <activity
+            android:name=".GoogleMapsActivity"
+            android:label="@string/title_activity_google_maps"></activity>
+=======
+        <activity android:name=".camaraActivity"></activity>
+>>>>>>> 4ab7c4688a382f059ade223806ca0b20ee151abe
+>>>>>>> 45ca982e4e991de533395a6f42581c80231a7f0d
     </application>
 
 </manifest>
